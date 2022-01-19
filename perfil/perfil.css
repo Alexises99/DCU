@@ -1,0 +1,11 @@
+@media screen and (max-width: 512px) {
+    .adjust {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .adjust button {
+        width: 100%;
+    }
+    
+}
