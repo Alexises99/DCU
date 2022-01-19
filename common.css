@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+
+/*Se activa cuando está en un móvil*/
+@media screen and (max-width: 512px) {
+    .ocultar-M {
+        display:none;
+    }
+    #main_content {
+        width: 100vw;
+    }
+    footer {
+        height: 70px;
+    }
+}
+
+/*Se activa cuando está en pantalla completa*/
+@media screen and (min-width: 512px) {
+    .ocultar-O {
+        display:none;
+    }
+
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+#navbar {
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.history {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+#main_content {
+    font-size: 1.1rem;
+}
+
+#main_content h2{
+    font-weight: bold;
+    font-size: 2.3rem;
+}
+
+#logo {
+    max-width: 30%;
+}
+
+.bold {
+    font-weight: bolder;
+}

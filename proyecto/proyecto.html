@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/047dbc2db7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="proyecto.css">
+    <title>Proyecto X</title>
+</head>
+<body>
+    <header>
+        <div class="container ocultar-M">
+            <div class="d-flex justify-content-betweeen align-items-center">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <div class="d-flex flex-row align-items-center">
+                            <img 
+                                src="../sources/upv-minilogo.png" alt="Logo UPV" 
+                                id="logo">
+                            <div class="container history">
+                                <nav 
+                                    aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>'">
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item">
+                                                <a href="../home/home.html">Inicio</a>
+                                            </li>
+                                            <li class="breadcrumb-item">
+                                                <a href="../asignaturas/asignaturas.html">Asignaturas</a>
+                                            </li>
+                                            <li class="breadcrumb-item">
+                                                <a href="../Asignatura/Asignatura.html">AsignaturaX</a>
+                                            </li>
+                                            <li class="breadcrumb-item">
+                                                Proyecto X
+                                            </li>
+                                        </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 d-flex align-items-center justify-content-end">
+                        <div class="d-flex">
+                            <span 
+                                class="d-flex justify-content-center" style="font-size: 2em;">
+                                    <i class="far fa-bell p-2"></i>
+                            </span>
+                            <a href="login.html" class="history p-2">
+                                Cerrar sesión
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-3" >
+                <div class="d-flex justify-content-center px-5" id="navbar">
+                    <nav 
+                        class="nav nav-pills flex-column ocultar-M w-100">
+                            <a 
+                                class="nav-link bg-primary text-white"
+                                href="../asignaturas/asignaturas.html">
+                                    Asignaturas
+                            </a>
+                            <a class="nav-link" href="#">Chats</a>
+                            <a class="nav-link" href="#">Mi perfil</a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="col-9 border border rounded border-3 p-3" id="main_content">
+                <div class="row">
+                    <div class="col-sm-5" id="title_asig">
+                        <a href="../asignaturas/asignaturas.html" class="ocultar-O">&#60; Atras</a>
+                        <h1 class="display-5">Proyecto 1</h1>
+                        <a href="#" class="ocultar-O">Detalles</a>
+                    </div>
+                    <div class="col-sm-6 ocultar-M">
+                        <div class="row h-100 d-flex flex-row align-items-center">
+                                <div class="col-sm-8">
+                                    <div class="text-center">
+                                        <div>Fecha limite:</div>
+                                        <div>10-12-2021, 23:55</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    En proceso
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ocultar-O">
+                    <div class="col-6 ">
+                        <p class="bold">Descripción</p>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex justify-content-end">
+                            <p class="bold">15-06-2021, 23:55</p>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam ut veritatis, provident unde nesciunt repudiandae assumenda molestias expedita, quae necessitatibus delectus omnis deleniti, saepe odio explicabo eveniet quo facilis consectetur.
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <h4>Horario</h4>
+                    <img 
+                        src="../sources/bar_chart.PNG" 
+                        alt="Horario"
+                        class="img-fluid">
+                </div>
+                <div class=" mt-3 d-flex justify-content-end ocultar-O">
+                    <p class="bold">En proceso</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="group mt-2">
+                            <h3>Grupo 1</h3>
+                            <div class="border border-2 rounded border-dark p-2 bg-info">
+                                <p class="align-middle d-inline">Alumno1, alumno2, alumnoX, alumnoZ, etc...</p>
+                            </div>
+                            <div class="d-flex justify-content-end mt-2">
+                                <button class="btn btn-primary mx-3 px-4">
+                                    Solicitar unirse
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="group mt-2">
+                            <h3>Grupo 2</h3>
+                            <div class="border border-2 rounded border-dark p-2 bg-danger">
+                                <p class="align-middle d-inline">Alumno1, alumno2, alumnoX, alumnoZ, etc...</p>
+                            </div>
+                            <div class="d-flex justify-content-end mt-2">
+                                <button class="btn btn-primary mx-3 px-4">
+                                    Solicitar unirse
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="group mt-2">
+                            <h3>Grupo 3</h3>
+                            <div class="border border-2 rounded border-dark p-2 bg-success">
+                                <p class="align-middle d-inline">Alumno1, alumno2, alumnoX, alumnoZ, etc...</p>
+                            </div>
+                            <div class="d-flex justify-content-end mt-2">
+                                <button class="btn btn-primary mx-3 px-4">
+                                    Solicitar unirse
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end px-5 mt-3">
+                    <button class="btn btn-info px-5">
+                        Crear grupo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="row ocultar-O fixed-bottom" style="border-top: 2px solid black;">
+            
+            <div class="col-3 flex-column item_nav">
+                <span 
+                    class="d-flex justify-content-center"
+                    style="font-size: 2em; ">
+                    <i class="fas fa-project-diagram"></i>
+                </span>
+                <div class="d-flex justify-content-center">
+                    <a class="nav-mov" href="">
+                        Proyectos
+                    </a>
+                </div>
+            </div>
+            <div class="col-3 flex-column item_nav">
+                <span 
+                    class="d-flex justify-content-center"
+                    style="font-size: 2em; ">
+                    <i class="fas fa-user-friends"></i>
+                </span>
+                <div class="d-flex justify-content-center">
+                    <a class="nav-mov" href="">
+                        Alumnos
+                    </a>
+                </div>
+            </div>
+            <div class="col-3 flex-column item_nav">
+                <span 
+                    class="d-flex justify-content-center"
+                    style="font-size: 2em;">
+                    <i class="fas fa-poll"></i>
+                </span>
+                <div class="d-flex justify-content-center">
+                    <a class="nav-mov" href="">
+                        Calificaciones
+                    </a>
+                </div>
+            </div>
+            <div class="col-3 flex-column item_nav">
+                <span 
+                    class="d-flex justify-content-center"
+                    style="font-size: 2em;">
+                    <i class="far fa-calendar-alt"></i>
+                </span>
+                <div class="d-flex justify-content-center">
+                    <a class="nav-mov" href="">
+                        Calendario
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+        
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/047dbc2db7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="asignatura.css">
+    <title>AsignaturaX</title>
+</head>
+<body>
+
+    <header>
+        <div class="container ocultar-M">
+            <div class="d-flex justify-content-betweeen align-items-center">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <div class="d-flex flex-row align-items-center">
+                            <img 
+                                src="../sources/upv-minilogo.png" alt="Logo UPV" 
+                                id="logo">
+                            <div class="container history">
+                                <nav 
+                                    aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>'">
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item">
+                                                <a href="../home/home.html">Inicio</a>
+                                            </li>
+                                            <li class="breadcrumb-item">
+                                                <a href="../asignaturas/asignaturas.html">Asignaturas</a>
+                                            </li>
+                                            <li class="breadcrumb-item">
+                                                AsignaturaX
+                                            </li>
+                                        </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 d-flex align-items-center justify-content-end">
+                        <div class="d-flex">
+                            <span 
+                                class="d-flex justify-content-center" style="font-size: 2em;">
+                                    <i class="far fa-bell p-2"></i>
+                            </span>
+                            <a href="login.html" class="history p-2">
+                                Cerrar sesión
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-3" >
+                <div class="d-flex justify-content-center px-5" id="navbar">
+                    <nav 
+                        class="nav nav-pills flex-column ocultar-M w-100">
+                            <a 
+                                class="nav-link bg-primary text-white"
+                                href="../asignaturas/asignaturas.html">
+                                    Asignaturas
+                            </a>
+                            <a class="nav-link" href="#">Chats</a>
+                            <a class="nav-link" href="#">Mi perfil</a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="col-9 border border rounded border-3 p-3" id="main_content">
+                <div class="row">
+                    <div class="col" id="title_asig">
+                        <a href="../asignaturas/asignaturas.html" class="ocultar-O">&#60; Atras</a>
+                        <h1>SSR</h1>
+                        <a href="#" class="ocultar-O">Detalles</a>
+                    </div>
+                </div>
+                <div class="row ocultar-M">
+                    <nav class="nav nav-pills nav-justified">
+                        <a class="nav-link active" href="#">Proyectos</a>
+                        <a class="nav-link" href="../alumnosAsignaturas/alumnosAsignaturas.html">Alumnos</a>
+                        <a class="nav-link" href="#">Calificaciones</a>
+                        <a class="nav-link " href="#">Calendario</a>
+                        <a class="nav-link " href="#">Detalles</a>
+                      </nav>
+                </div>
+                <div class="row proyecto mt-2">
+                    <div class="card container">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6 col-md-5">
+                                    <h2>Proyecto 1</h2>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <p class="card-subtitle mt-2 text-muted ocultar-O">10-12-2021, 23:55</p>
+                                    <p class="card-subtitle mt-2 text-muted date ocultar-M">Fecha limite:10-12-2021, 23:55</p>
+                                </div>
+                                <div class="col-md-3 ocultar-M d-flex justify-content-start">
+                                    <div class="col-md-4 ocultar-M">
+                                        <button type="button" class="btn btn-light">En proceso</button>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="row">
+                                <p class="card-text">Lorem ipsum dolorsit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Ut enimad minim veniam, quis nostrudexercitation ullamco laboris nisi utaliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row proyecto mt-2">
+                    <div class="card container">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6 col-md-5">
+                                    <h2>Proyecto 1</h2>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <p class="card-subtitle mt-2 text-muted ocultar-O">10-12-2021, 23:55</p>
+                                    <p class="card-subtitle mt-2 text-muted date ocultar-M">Fecha limite:10-12-2021, 23:55</p>
+                                </div>
+                                <div class="col-md-3 ocultar-M d-flex justify-content-start">
+                                    <div class="col-md-4 ocultar-M">
+                                        <button type="button" class="btn btn-primary">Entregado</button>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="row">
+                                <p class="card-text">Lorem ipsum dolorsit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Ut enimad minim veniam, quis nostrudexercitation ullamco laboris nisi utaliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row proyecto mt-2">
+                    <div class="card container">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6 col-md-5">
+                                    <h2>Proyecto 1</h2>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <p class="card-subtitle mt-2 text-muted ocultar-O">10-12-2021, 23:55</p>
+                                    <p class="card-subtitle mt-2 text-muted date ocultar-M">Fecha limite:10-12-2021, 23:55</p>
+                                </div>
+                                <div class="col-md-3 ocultar-M d-flex justify-content-start">
+                                    <div class="col-md-4 ocultar-M">
+                                        <button type="button" class="btn btn-success">Corregido!</button>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="row">
+                                <p class="card-text">Lorem ipsum dolorsit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Ut enimad minim veniam, quis nostrudexercitation ullamco laboris nisi utaliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row proyecto mt-2">
+                    <div class="card container">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6 col-md-5">
+                                    <h2>Proyecto 1</h2>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <p class="card-subtitle mt-2 text-muted ocultar-O">10-12-2021, 23:55</p>
+                                    <p class="card-subtitle mt-2 text-muted date ocultar-M">Fecha limite:10-12-2021, 23:55</p>
+                                </div>
+                                <div class="col-md-3 ocultar-M d-flex justify-content-start">
+                                    <div class="col-md-4 ocultar-M">
+                                        <button type="button" class="btn btn-success">Corregido!</button>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="row">
+                                <p class="card-text">Lorem ipsum dolorsit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Ut enimad minim veniam, quis nostrudexercitation ullamco laboris nisi utaliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="row ocultar-O fixed-bottom" style="border-top: 2px solid black;">
+            
+            <div class="col-3 flex-column item_nav mt-1">
+                <span 
+                    class="d-flex justify-content-center"
+                    style="font-size: 2em; ">
+                    <i class="fas fa-project-diagram"></i>
+                </span>
+                <div class="d-flex justify-content-center">
+                    <a class="nav-mov" href="">
+                        Proyectos
+                    </a>
+                </div>
+            </div>
+            <div class="col-3 flex-column item_nav mt-1">
+                <span 
+                    class="d-flex justify-content-center"
+                    style="font-size: 2em; ">
+                    <i class="fas fa-user-friends"></i>
+                </span>
+                <div class="d-flex justify-content-center">
+                    <a class="nav-mov" href="">
+                        Alumnos
+                    </a>
+                </div>
+            </div>
+            <div class="col-3 flex-column item_nav mt-1">
+                <span 
+                    class="d-flex justify-content-center"
+                    style="font-size: 2em;">
+                    <i class="fas fa-poll"></i>
+                </span>
+                <div class="d-flex justify-content-center">
+                    <a class="nav-mov" href="">
+                        Calificaciones
+                    </a>
+                </div>
+            </div>
+            <div class="col-3 flex-column item_nav mt-1">
+                <span 
+                    class="d-flex justify-content-center"
+                    style="font-size: 2em;">
+                    <i class="far fa-calendar-alt"></i>
+                </span>
+                <div class="d-flex justify-content-center">
+                    <a class="nav-mov" href="">
+                        Calendario
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+        
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        $('.proyecto').click(function() {
+            window.location.href = '../proyecto/proyecto.html';
+        })
+    </script>
+</body>
+</html>

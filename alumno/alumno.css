@@ -1,0 +1,25 @@
+
+
+@media screen and (max-width: 512px) {
+    .ocultar-M {
+        display:none;
+    }
+    #main_content {
+        width: 100vw;
+    }
+    footer {
+        height: 70px;
+    }
+    .adjust {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+    .buttons button {
+        width: 100%;
+    }
+}

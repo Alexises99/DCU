@@ -1,0 +1,17 @@
+/*Se activa cuando está en un móvil*/
+@media screen and (max-width: 512px) {
+    #title_asig {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .date {
+        font-size: 0.9rem;
+    }
+}
+
+.proyecto:hover {
+    font-weight: bold;
+    cursor:pointer;
+}
+
