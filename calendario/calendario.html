@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/047dbc2db7.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../common.css">
+	<link rel="stylesheet" href="../Asignatura/asignatura.css">
+	<link rel="stylesheet" href="calendario.css">
+	<title>Calendario</title>
+</head>
+
+<body>
+
+	<header>
+		<div class="container ocultar-M">
+			<div class="d-flex justify-content-betweeen align-items-center">
+				<div class="row">
+					<div class="col-sm-9">
+						<div class="d-flex flex-row align-items-center">
+							<img src="../sources/upv-minilogo.png" alt="Logo UPV" id="logo">
+							<div class="container history">
+								<nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>'">
+									<ol class="breadcrumb">
+										<li class="breadcrumb-item">
+											<a href="../home/home.html">Inicio</a>
+										</li>
+										<li class="breadcrumb-item">
+											<a href="../asignaturas/asignaturas.html">Asignaturas</a>
+										</li>
+										<li class="breadcrumb-item">
+											AsignaturaX
+										</li>
+
+									</ol>
+								</nav>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 d-flex align-items-center justify-content-end">
+						<div class="d-flex">
+							<span class="d-flex justify-content-center" style="font-size: 2em;">
+								<i class="far fa-bell p-2"></i>
+							</span>
+							<a href="login.html" class="history p-2">
+								Cerrar sesión
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="container mt-3">
+		<div class="row">
+			<div class="col-3">
+				<div class="d-flex justify-content-center px-5" id="navbar">
+					<nav class="nav nav-pills flex-column ocultar-M w-100">
+						<a class="nav-link bg-primary text-white" href="../asignaturas/asignaturas.html">
+							Asignaturas
+						</a>
+						<a class="nav-link" href="#">Chats</a>
+						<a class="nav-link" href="#">Mi perfil</a>
+					</nav>
+				</div>
+			</div>
+
+			<div class="col-9 border border rounded border-3 p-3" id="main_content">
+				<div class="row">
+					<div class="col" id="title_asig">
+						<a href="../asignaturas/asignaturas.html" class="ocultar-O">&#60; Atras</a>
+						<h1>SSR</h1>
+						<a href="#" class="ocultar-O">Detalles</a>
+					</div>
+				</div>
+				<div class="row ocultar-M">
+					<nav class="nav nav-pills nav-justified">
+						<a class="nav-link" href="#">Proyectos</a>
+						<a class="nav-link" href="#">Alumnos</a>
+						<a class="nav-link" href="#">Calificaciones</a>
+						<a class="nav-link active" href="#">Calendario</a>
+						<a class="nav-link" href="#">Detalles</a>
+					</nav>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-6 mt-3 calendario">
+						<div class="month">
+							<ul>
+								<li class="prev">&#10094;</li>
+								<li class="next">&#10095;</li>
+								<li>Enero<br><span style="font-size:18px">2022</span></li>
+							</ul>
+						</div>
+	
+						<ul class="weekdays">
+							<li>L</li>
+							<li>M</li>
+							<li>Mx</li>
+							<li>J</li>
+							<li>V</li>
+							<li>S</li>
+							<li>D</li>
+						</ul>
+	
+						<ul class="days">
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+							<li>6</li>
+							<li>7</li>
+							<li>8</li>
+							<li>9</li>
+							<li><span class="active">10</span></li>
+							<li>11</li>
+							<li>12</li>
+							<li>13</li>
+							<li>14</li>
+							<li>15</li>
+							<li>16</li>
+							<li>17</li>
+							<li>18</li>
+							<li>19</li>
+							<li>20</li>
+							<li>21</li>
+							<li>22</li>
+							<li>23</li>
+							<li>24</li>
+							<li>25</li>
+							<li>26</li>
+							<li>27</li>
+							<li>28</li>
+							<li>29</li>
+							<li>30</li>
+							<li>31</li>
+						</ul>
+					</div>
+					<div class="col-sm-12 col-md-6">
+						<div class="row">
+							<div class="col-sm-12 fecha">
+								<p>Miércoles 10 de Enero, 2022</p>
+							</div>
+							<div class="col-sm-12 ocultar-O">
+								<div class="card border-success mb-3">
+									<div class="card-header">10:30</div>
+									<div class="card-body text-success">
+										<h5 class="card-title">Trabajo X</h5>
+										<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+											incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+											ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+									</div>
+								</div>
+	
+								<div class="card border-danger mb-3">
+									<div class="card-header">18:00</div>
+									<div class="card-body text-danger">
+										<h5 class="card-title">Examen de DCU</h5>
+										<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+											incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+											ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12 ocultar-M tarjetas">
+								<div id="carouselExampleIndicators" class="carousel slide carousel-dark" data-bs-ride="carousel">
+									<div class="centrar-carrousel">
+										<div class="carousel-indicators">
+											<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+												class="active" aria-current="true" aria-label="Slide 1"></button>
+											<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+												aria-label="Slide 2"></button>
+										</div>
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<div class="card border-success mb-3">
+													<div class="card-header">10:30</div>
+													<div class="card-body text-success">
+														<h5 class="card-title">Trabajo X</h5>
+														<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+															tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+															exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+													</div>
+												</div>
+											</div>
+											<div class="carousel-item">
+												<div class="card border-danger mb-3">
+													<div class="card-header">18:00</div>
+													<div class="card-body text-danger">
+														<h5 class="card-title">Examen de DCU</h5>
+														<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+															tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+															exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+										data-bs-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="visually-hidden">Previous</span>
+									</button>
+									<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+										data-bs-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="visually-hidden">Next</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="row ocultar-O fixed-bottom" style="border-top: 2px solid black;">
+
+			<div class="col-3 flex-column item_nav mt-1">
+				<span class="d-flex justify-content-center" style="font-size: 2em; ">
+					<i class="fas fa-project-diagram"></i>
+				</span>
+				<div class="d-flex justify-content-center">
+					<a class="nav-mov" href="">
+						Proyectos
+					</a>
+				</div>
+			</div>
+			<div class="col-3 flex-column item_nav mt-1">
+				<span class="d-flex justify-content-center" style="font-size: 2em; ">
+					<i class="fas fa-user-friends"></i>
+				</span>
+				<div class="d-flex justify-content-center">
+					<a class="nav-mov" href="">
+						Alumnos
+					</a>
+				</div>
+			</div>
+			<div class="col-3 flex-column item_nav mt-1">
+				<span class="d-flex justify-content-center" style="font-size: 2em;">
+					<i class="fas fa-poll"></i>
+				</span>
+				<div class="d-flex justify-content-center">
+					<a class="nav-mov" href="">
+						Calificaciones
+					</a>
+				</div>
+			</div>
+			<div class="col-3 flex-column item_nav mt-1">
+				<span class="d-flex justify-content-center" style="font-size: 2em;">
+					<i class="far fa-calendar-alt"></i>
+				</span>
+				<div class="d-flex justify-content-center">
+					<a class="nav-mov" href="">
+						Calendario
+					</a>
+				</div>
+			</div>
+
+		</div>
+
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
