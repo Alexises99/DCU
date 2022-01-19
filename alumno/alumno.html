@@ -85,8 +85,9 @@
                     </div>
                     <div class="col-md-6 col-lg-6">
                         <div class="h-100 d-flex flex-column justify-content-center adjust">
-                            <div>Nombre: Julieto</div>
-                            <div>Apellidos: Venegas Parra</div>
+                            <div>Nombre:<div id="nombre"></div></div>
+                            <div>Apellidos:<div id="apellidos"></div></div>
+                            <div>Direccion:<div id="direccion"></div></div>
                             <div>Matriculado en: Grado de ingenieria informatica</div>
                             <div>
                                 <a href="#" class="link-primary">
@@ -113,11 +114,19 @@
                         <p class="border-bottom">Asignatura 3</p>
                     </div>
                     <div class="col-lg-6">
+                        <h4 class="border-bottom border-2 mt-2">Asignaturas</h4>
+                        <ul id="asignaturas" class="list-group">
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
                         <div class="h4 text-center">Horario</div>
-                        <img 
-                            src="../sources/bar_chart.PNG" 
-                            alt="Horario"
-                            class="img-fluid">
+                    <img 
+                        src="../sources/bar_chart.PNG" 
+                        alt="Horario"
+                        class="img-fluid">
                     </div>
                 </div>
                 <div class="buttons mt-3">
@@ -174,5 +183,28 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function() {
+            $.ajax({
+                url: "http://localhost:8081/Expediente/dni",
+                method: "GET",
+                headers: {
+                    Accept:"application/json"
+                },
+                dataType: "json",
+                success: function(json) {
+                    console.log(json)
+                    $("#nombre").html(json.nombre);
+                    $("#apellidos".html(json.apellidos));
+                    $("direccion").html(json.direccion + ", " + json.ciudad);
+                    $.each(json.asignaturas, function(index, asig) {
+                        $("#asignatura").append("<li class='list-group-item'>" + asig.acronimo + " " + asig.anyo + "</li>")
+                    });
+                }
+            })
+        });
+
+    </script>
 </body>
 </html>
